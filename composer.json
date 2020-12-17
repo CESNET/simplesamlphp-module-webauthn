@@ -1,5 +1,5 @@
 {
-  "name": "CESNET/simplesamlphp-module-webauthn",
+  "name": "cesnet/simplesamlphp-module-webauthn",
   "description": "A SimpleSAMLphp module for MFA using webauthn flask module",
   "type": "simplesamlphp-module",
   "authors": [
