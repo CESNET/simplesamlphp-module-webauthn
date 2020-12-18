@@ -44,9 +44,9 @@ $jws = Build::jws() // We build a JWS
 
 $api_url = $state["api_url"] . "/" . $jws;
 $response_json = file_get_contents($api_url);
-$response = json_decode($response_json);
+$response = json_decode($response_json, true);
 
-if ($response->{"result"} != "okay" or $response->{"nonce"} != $original_nonce) {
+if ($response["result"] != "okay" or $response["nonce"] != $original_nonce) {
     throw new Exception("The authentication was unsuccessful");
 }
 
