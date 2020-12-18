@@ -7,7 +7,9 @@ cd /var/simplesamlphp/modules
 git clone https://github.com/CESNET/simplesamlphp-module-webauthn.git webauthn
 ```
 
-## Example of config
+## Example configuration
+
+If the flask module runs at `https://flask.example.com/webauthn/`, use the following auth proc filter:
 
 ```
 50 => [
@@ -17,4 +19,10 @@ git clone https://github.com/CESNET/simplesamlphp-module-webauthn.git webauthn
     'signing_key' => '/var/webauthn_private.pem',
     'user_id' => 'uid',
 ],
+```
+
+Then you have to adjust the configuration of the flask module. If your SimpleSAMLphp installation is available at `https://example.com/simplesaml/`, use the following URL as the `callback-url` in the flask module's `config.yaml`:
+
+```
+https://example.com/simplesaml/module.php/webauthn/handleResponse.php
 ```
