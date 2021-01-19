@@ -1,5 +1,7 @@
 # simplesamlphp-module-webauthn
 
+[![CodeFactor](https://www.codefactor.io/repository/github/cesnet/simplesamlphp-module-webauthn/badge/main)](https://www.codefactor.io/repository/github/cesnet/simplesamlphp-module-webauthn/overview/main)
+
 ## Installation
 
 ```
