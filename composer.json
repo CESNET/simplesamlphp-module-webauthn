@@ -19,5 +19,8 @@
     "web-token/jwt-signature-algorithm-ecdsa": "Adds ECDSA based signature algorithms",
     "web-token/jwt-signature-algorithm-eddsa": "Adds EdDSA based signature algorithms",
     "web-token/jwt-signature-algorithm-hmac": "Adds HMAC based signature algorithms"
+  },
+  "require-dev": {
+    "symplify/easy-coding-standard": "^9.0"
   }
 }
